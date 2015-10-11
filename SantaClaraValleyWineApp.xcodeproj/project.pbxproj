@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FB2DC191BC70F3700FF342C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB2DC181BC70F3700FF342C /* logo.png */; };
 		9FD06E9D1BC46540006E3DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06E9C1BC46540006E3DF7 /* AppDelegate.swift */; };
 		9FD06E9F1BC46540006E3DF7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06E9E1BC46540006E3DF7 /* FirstViewController.swift */; };
 		9FD06EA11BC46540006E3DF7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06EA01BC46540006E3DF7 /* SecondViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FB2DC181BC70F3700FF342C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		9FD06E991BC46540006E3DF7 /* SantaClaraValleyWineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SantaClaraValleyWineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD06E9C1BC46540006E3DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD06E9E1BC46540006E3DF7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				9FE99A501BC6DDDF001D61C4 /* ThirdViewController.swift */,
 				9FE99A541BC6E5C4001D61C4 /* FourthViewController.swift */,
 				9FD06EA21BC46540006E3DF7 /* Main.storyboard */,
+				9FB2DC181BC70F3700FF342C /* logo.png */,
 				9FD06EA51BC46540006E3DF7 /* Assets.xcassets */,
 				9FD06EA71BC46540006E3DF7 /* LaunchScreen.storyboard */,
 				9FD06EAA1BC46540006E3DF7 /* Info.plist */,
@@ -130,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB2DC191BC70F3700FF342C /* logo.png in Resources */,
 				9FD06EA91BC46540006E3DF7 /* LaunchScreen.storyboard in Resources */,
 				9FD06EA61BC46540006E3DF7 /* Assets.xcassets in Resources */,
 				9FD06EA41BC46540006E3DF7 /* Main.storyboard in Resources */,
