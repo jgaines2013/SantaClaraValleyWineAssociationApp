@@ -14,6 +14,7 @@
 		9FD06EA41BC46540006E3DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD06EA21BC46540006E3DF7 /* Main.storyboard */; };
 		9FD06EA61BC46540006E3DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD06EA51BC46540006E3DF7 /* Assets.xcassets */; };
 		9FD06EA91BC46540006E3DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD06EA71BC46540006E3DF7 /* LaunchScreen.storyboard */; };
+		9FE197441BCC23600076CE06 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE197431BCC23600076CE06 /* CoreLocation.framework */; };
 		9FE99A511BC6DDE0001D61C4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE99A501BC6DDDF001D61C4 /* ThirdViewController.swift */; };
 		9FE99A551BC6E5C4001D61C4 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE99A541BC6E5C4001D61C4 /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		9FD06EA51BC46540006E3DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FD06EA81BC46540006E3DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FD06EAA1BC46540006E3DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE197431BCC23600076CE06 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9FE99A501BC6DDDF001D61C4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		9FE99A541BC6E5C4001D61C4 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE197441BCC23600076CE06 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 		9FD06E901BC46540006E3DF7 = {
 			isa = PBXGroup;
 			children = (
+				9FE197431BCC23600076CE06 /* CoreLocation.framework */,
 				9FD06E9B1BC46540006E3DF7 /* SantaClaraValleyWineApp */,
 				9FD06E9A1BC46540006E3DF7 /* Products */,
 			);
