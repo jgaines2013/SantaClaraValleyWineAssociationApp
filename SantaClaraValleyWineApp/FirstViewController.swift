@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+
 class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
 
     @IBOutlet var map: MKMapView!
@@ -28,9 +29,9 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         
         let longitude:CLLocationDegrees = -121.969167
         
-        let latDelta:CLLocationDegrees = 0.5
+        let latDelta:CLLocationDegrees = 0.6
         
-        let lonDelta:CLLocationDegrees = 0.5
+        let lonDelta:CLLocationDegrees = 0.6
         
         let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
         
@@ -39,8 +40,16 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         
         map.setRegion(region, animated: true)
+        self.map.showsUserLocation = true
         
-
+        //Drop pins of wineries on the map
+        let AverFamilyVineyards = CLLocationCoordinate2D(latitude: 37.052714, longitude: -121.651230)
+        let AverFamilyVineyardsPin = MKPointAnnotation();
+        AverFamilyVineyardsPin.coordinate = AverFamilyVineyards
+        AverFamilyVineyardsPin.title = "Aver Family Vineyards"
+        map.addAnnotation(AverFamilyVineyardsPin)
+        
+        
         
       
     }
@@ -48,9 +57,17 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        let userLocation: CLLocation = locations[0]
-        let latitude = userLocation.coordinate.latitude
-        let longitude = userLocation.coordinate.longitude
+        let userLocation = locations.last
+        
+        let center = CLLocationCoordinate2D(latitude: userLocation!.coordinate.latitude, longitude: userLocation!.coordinate.longitude)
+        
+        let region = MKCoordinateRegion(center: center, span:MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        self.map.setRegion(region, animated: true)
+        
+        self.locationManager.startUpdatingLocation()
+        
+        //let latitude = userLocation.coordinate.latitude
+        //let longitude = userLocation.coordinate.longitude
         
         //let latDelta:CLLocationDegrees = 0.5
         
@@ -58,23 +75,23 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         
         //let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
         
-        let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        //let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         
         //let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         
         //self.map.setRegion(region, animated: true)
         
-        let annotation = MKPointAnnotation()
+        //let annotation = MKPointAnnotation()
         
-        annotation.coordinate = location
-        annotation.title = "Current Location"
+        //annotation.coordinate = location
+        //annotation.title = "Current Location"
         
-        self.map.addAnnotation(annotation)
-        
-        
+        //self.map.addAnnotation(annotation)
         
         
-    }
+        
+        
+   }
     
     
 
