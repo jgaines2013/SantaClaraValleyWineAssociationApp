@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Cjc-Yc-HpU">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cjc-Yc-HpU">
                                 <rect key="frame" x="0.0" y="182" width="375" height="436"/>
                                 <animations/>
                             </mapView>
@@ -114,6 +114,18 @@
                     <view key="view" contentMode="scaleToFill" id="9cK-ZN-7Ec">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="5JH-A9-eTr">
+                                <rect key="frame" x="20" y="28" width="101" height="109"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wineries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVR-x6-IqT">
+                                <rect key="frame" x="129" y="68" width="139" height="29"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="29"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -122,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPz-9f-Ah0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169" y="859"/>
+            <point key="canvasLocation" x="168.5" y="858.5"/>
         </scene>
         <!--About Us-->
         <scene sceneID="wg7-f3-ORb">
@@ -144,172 +156,25 @@
                                     <constraint firstAttribute="height" constant="21" id="uvx-Ig-IUw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" indicatorStyle="black" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MX-UX-one">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" indicatorStyle="black" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MX-UX-one">
                                 <rect key="frame" x="20" y="137" width="335" height="481"/>
                                 <animations/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Valley of the Heart’s Delight: Santa Clara Awaits
-"Silicon Valley" - it's easy to forget this area's role as California's first premium wine production region - the Santa Clara Valley. Native Americans named it "the Valley of the Heart's Delight." French and Italian immigrants who settled here during the Gold Rush era recognized the rich soils and Mediteranean climate as the perfect New World home for their European grape varietals. And so it begins...</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="15" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="30" minimumLineHeight="20.444499969482422" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="  ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="15" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="30" minimumLineHeight="20.444499969482422" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">The history of winemaking and viticulture in the Santa Clara Valley goes back to the 18th Century. From the discovery of native "Vitis Californica" grapes growing wild and the first plantings of Mission grapes at the Santa Clara Mission in 1798, through boom years and depression, phylloxera and prohibition, the region has some of the richest tradition of anywhere in the country.</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="15" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="30" minimumLineHeight="20.444499969482422" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="  ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="15" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="30" minimumLineHeight="20.444499969482422" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Then came the rise of Silicon Valley and the farmland gave way to technology parks, housing and shopping malls. Well known, respected wineries such as Mirassou and Almadén were sold and their old vineyards torn up and subdivided. In much of the county its viticultural history is represented by little more than street names and historical markers. Winegrowing continued in the south of the county; around Hecker Pass and Watsonville Road a number of family owned wineries continued to produce wines, mostly for local consumption.</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="15" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="30" minimumLineHeight="20.444499969482422" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="15" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="30" minimumLineHeight="20.444499969482422" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> 
+                                <string key="text">Valley of the Heart’s Delight: Santa Clara Awaits 
+"Silicon Valley" - it's easy to forget this area's role as California's first premium wine production region - the Santa Clara Valley. Native Americans named it "the Valley of the Heart's Delight." French and Italian immigrants who settled here during the Gold Rush era recognized the rich soils and Mediteranean climate as the perfect New World home for their European grape varietals. And so it begins...  The history of winemaking and viticulture in the Santa Clara Valley goes back to the 18th Century. From the discovery of native "Vitis Californica" grapes growing wild and the first plantings of Mission grapes at the Santa Clara Mission in 1798, through boom years and depression, phylloxera and prohibition, the region has some of the richest tradition of anywhere in the country.  Then came the rise of Silicon Valley and the farmland gave way to technology parks, housing and shopping malls. Well known, respected wineries such as Mirassou and Almadén were sold and their old vineyards torn up and subdivided. In much of the county its viticultural history is represented by little more than street names and historical markers. Winegrowing continued in the south of the county; around Hecker Pass and Watsonville Road a number of family owned wineries continued to produce wines, mostly for local consumption.  
 The area's resurgence gained pace in 1989.
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="15" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="30" minimumLineHeight="20.444499969482422" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Morgan Hill and Gilroy are much more than premium shopping outlets and garlic festivals, and the Santa Clara Valley is far more than a bedroom community for San Jose. It’s agriculturally significant, with apricots, garlic, cherries, mushrooms and grapes. And it’s a recreational bonanza, with Anderson Lake and Calero reservoirs (cross fingers we get rain soon), along with Henry Coe, Coyote Creek, Uvas Creek and Mt. Madonna Parks, where you can hike to your heart’s content.
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="15" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="30" minimumLineHeight="25.600000381469727" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">The Morgan Hill Outdoor Sports Center draws thousands each year, as do golf courses like CordeValle, Coyote Creek and Eagle Ridge. Opening in June, the new Gilroy Water Oasis is powered by sun and wind, where shady umbrellas are solar panels and windmills drive waterslides.
+Morgan Hill and Gilroy are much more than premium shopping outlets and garlic festivals, and the Santa Clara Valley is far more than a bedroom community for San Jose. It’s agriculturally significant, with apricots, garlic, cherries, mushrooms and grapes. And it’s a recreational bonanza, with Anderson Lake and Calero reservoirs (cross fingers we get rain soon), along with Henry Coe, Coyote Creek, Uvas Creek and Mt. Madonna Parks, where you can hike to your heart’s content.
+The Morgan Hill Outdoor Sports Center draws thousands each year, as do golf courses like CordeValle, Coyote Creek and Eagle Ridge. Opening in June, the new Gilroy Water Oasis is powered by sun and wind, where shady umbrellas are solar panels and windmills drive waterslides.
 With the steady influx of people who want to work, shop, dine and live here, you’ll find about as many fine dining establishments in downtown Morgan Hill as you can on Santana Row. Gilroy’s historic district has been steadily refurbished, with new shops in shiny old places.
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="15" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="30" minimumLineHeight="20.444499969482422" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Valley of the Vines
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="15" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="30" minimumLineHeight="25.600000381469727" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Long a vibrant growing region for premium wine grapes, the Santa Clara Valley is now home to over two-dozen wineries, of every size and shape, from long established family operations to relatively small newcomers working out of their garages. 
+Valley of the Vines
+Long a vibrant growing region for premium wine grapes, the Santa Clara Valley is now home to over two-dozen wineries, of every size and shape, from long established family operations to relatively small newcomers working out of their garages. 
 The key event was the designation of a distinct American Viticultural Area, or AVA; prior to this the region's wines were typically labeled 'Central Coast' or 'Santa Clara County'. Gene Guglielmo, grandson of winery founder Emilio, researched and filed the petition, and on March 28th 1989 the Santa Clara Valley AVA was finally declared.
 For more information on the early history of the Santa Clara Valley see the book Like Modern Edens: Winegrowing in Santa Clara Valley and Santa Cruz Mountains 1798-1981 by Charles L. Sullivan (1982). Another book, The Wineries of Santa Clara Valley, by Bev Stenehjem (2015) tells the history of our region using vintage photographs dating back to the 1800s.
 </string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="15" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="30" minimumLineHeight="20.444499969482422" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="8NL-bw-0JX">
@@ -335,6 +200,9 @@ For more information on the early history of the Santa Clara Valley see the book
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="About Us" image="first" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="textView" destination="8MX-UX-one" id="aOZ-1P-Ciy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

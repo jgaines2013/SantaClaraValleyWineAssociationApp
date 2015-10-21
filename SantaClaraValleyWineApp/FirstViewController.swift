@@ -25,13 +25,13 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         locationManager.startUpdatingLocation()
         
         
-        let latitude:CLLocationDegrees = 37.354444
+        let latitude:CLLocationDegrees = 37.3382
         
-        let longitude:CLLocationDegrees = -121.969167
+        let longitude:CLLocationDegrees = -121.8863
         
-        let latDelta:CLLocationDegrees = 0.6
+        let latDelta:CLLocationDegrees = 0.8
         
-        let lonDelta:CLLocationDegrees = 0.6
+        let lonDelta:CLLocationDegrees = 0.8
         
         let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
         
@@ -57,14 +57,14 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        let userLocation = locations.last
+        //let userLocation = locations.last
         
-        let center = CLLocationCoordinate2D(latitude: userLocation!.coordinate.latitude, longitude: userLocation!.coordinate.longitude)
+        //let center = CLLocationCoordinate2D(latitude: userLocation!.coordinate.latitude, longitude: userLocation!.coordinate.longitude)
         
-        let region = MKCoordinateRegion(center: center, span:MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
-        self.map.setRegion(region, animated: true)
+        //let region = MKCoordinateRegion(center: center, span:MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        //self.map.setRegion(region, animated: true)
         
-        self.locationManager.startUpdatingLocation()
+        //self.locationManager.startUpdatingLocation()
         
         //let latitude = userLocation.coordinate.latitude
         //let longitude = userLocation.coordinate.longitude

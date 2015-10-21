@@ -13,7 +13,11 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        textView.scrollRangeToVisible(NSRange(location: 0,length: 0))
+        
+        
     }
+    @IBOutlet var textView: UITextView!
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
