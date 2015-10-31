@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9F5340051BD2A43D000FEE0F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5340041BD2A43D000FEE0F /* FifthViewController.swift */; };
 		9FB2DC191BC70F3700FF342C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB2DC181BC70F3700FF342C /* logo.png */; };
+		9FBD7E0D1BE4534600A46028 /* wineries.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD7E0C1BE4534600A46028 /* wineries.txt */; };
 		9FD06E9D1BC46540006E3DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06E9C1BC46540006E3DF7 /* AppDelegate.swift */; };
 		9FD06E9F1BC46540006E3DF7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06E9E1BC46540006E3DF7 /* FirstViewController.swift */; };
 		9FD06EA11BC46540006E3DF7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD06EA01BC46540006E3DF7 /* SecondViewController.swift */; };
@@ -18,11 +19,13 @@
 		9FE197441BCC23600076CE06 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE197431BCC23600076CE06 /* CoreLocation.framework */; };
 		9FE99A511BC6DDE0001D61C4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE99A501BC6DDDF001D61C4 /* ThirdViewController.swift */; };
 		9FE99A551BC6E5C4001D61C4 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE99A541BC6E5C4001D61C4 /* FourthViewController.swift */; };
+		9FFFFC5D1BDDAF06005EE60D /* associates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFFC5C1BDDAF06005EE60D /* associates.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F5340041BD2A43D000FEE0F /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		9FB2DC181BC70F3700FF342C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		9FBD7E0C1BE4534600A46028 /* wineries.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wineries.txt; sourceTree = "<group>"; };
 		9FD06E991BC46540006E3DF7 /* SantaClaraValleyWineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SantaClaraValleyWineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD06E9C1BC46540006E3DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD06E9E1BC46540006E3DF7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		9FE197431BCC23600076CE06 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9FE99A501BC6DDDF001D61C4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		9FE99A541BC6E5C4001D61C4 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		9FFFFC5C1BDDAF06005EE60D /* associates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = associates.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				9F5340041BD2A43D000FEE0F /* FifthViewController.swift */,
 				9FD06EA21BC46540006E3DF7 /* Main.storyboard */,
 				9FB2DC181BC70F3700FF342C /* logo.png */,
+				9FBD7E0C1BE4534600A46028 /* wineries.txt */,
+				9FFFFC5C1BDDAF06005EE60D /* associates.txt */,
 				9FD06EA51BC46540006E3DF7 /* Assets.xcassets */,
 				9FD06EA71BC46540006E3DF7 /* LaunchScreen.storyboard */,
 				9FD06EAA1BC46540006E3DF7 /* Info.plist */,
@@ -145,6 +151,8 @@
 				9FD06EA91BC46540006E3DF7 /* LaunchScreen.storyboard in Resources */,
 				9FD06EA61BC46540006E3DF7 /* Assets.xcassets in Resources */,
 				9FD06EA41BC46540006E3DF7 /* Main.storyboard in Resources */,
+				9FBD7E0D1BE4534600A46028 /* wineries.txt in Resources */,
+				9FFFFC5D1BDDAF06005EE60D /* associates.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
