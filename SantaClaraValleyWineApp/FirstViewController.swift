@@ -12,7 +12,7 @@ import CoreLocation
 
 struct Associates
 {
-    var name: String?
+    var name: String!
     var phoneNumber: String?
     var address: String?
     var website: String?
@@ -45,7 +45,12 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         {
             print("\(theWineryName) :  \(theWineryObj.phoneNumber!)")
         }
-
+        readAssociatesFile()
+        print(listOfAssociates.count + 1)
+        for (theAssociationName, theAssociationObj) in listOfAssociates
+        {
+            print("\(theAssociationName) :  \(theAssociationObj.phoneNumber!)")
+        }
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -121,12 +126,32 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         var text=""
         do{
             text = try NSString(contentsOfFile: path!, encoding: NSUTF8StringEncoding) as String
-            print(text)
+            //print(text)
             
         }
         catch{
             print("error reading associates file")
         }
+        var arrayOfAssociates = text.componentsSeparatedByString("$")
+        
+        for var i = 0; i < arrayOfAssociates.count-1; i++
+        {
+            var eachAssociate = arrayOfAssociates[i].componentsSeparatedByString(";")
+            for var j = 0; j < eachAssociate.count-1; j++
+            {
+                let name = eachAssociate[0]
+                let number = eachAssociate[1]
+                let address = eachAssociate[2]
+                let link =  eachAssociate[3]
+                var obj = Associates()
+                obj.name = name
+                obj.phoneNumber = number
+                obj.address = address
+                obj.website = link
+                listOfAssociates[obj.name!] = obj
+            }
+        }
+
     }
     
     func dropPins()
