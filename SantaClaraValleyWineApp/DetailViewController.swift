@@ -17,12 +17,14 @@ class DetailViewController: UIViewController {
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var websiteLabel: UILabel!
     @IBOutlet var DescriptionLabel: UILabel!
+    @IBOutlet var phoneNumberLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.topItem?.title = listOfWineries[rowCounter].name
         hoursLabel.text = "Hours of Operations: " + listOfWineries[rowCounter].hours
         addressLabel.text = "Address: " + listOfWineries[rowCounter].address
         websiteLabel.text = listOfWineries[rowCounter].websiteOrEmail
+        phoneNumberLabel.text = "Phone Number: " + listOfWineries[rowCounter].phoneNumber
       
     }
 
