@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class DetailViewController: UIViewController {
+import MapKit
+class DetailViewController: UIViewController, MKMapViewDelegate {
 
     
     
@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
     @IBOutlet var websiteLabel: UILabel!
     @IBOutlet var DescriptionLabel: UILabel!
     @IBOutlet var phoneNumberLabel: UILabel!
+    @IBOutlet var wineryMap: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.topItem?.title = listOfWineries[rowCounter].name
@@ -26,6 +27,22 @@ class DetailViewController: UIViewController {
         websiteLabel.text = listOfWineries[rowCounter].websiteOrEmail
         phoneNumberLabel.text = "Phone Number: " + listOfWineries[rowCounter].phoneNumber
       
+        
+        //Map setup
+        let latitude: CLLocationDegrees = Double(listOfWineries[rowCounter].latitude)!
+        let longitude: CLLocationDegrees = Double(listOfWineries[rowCounter].longitude)!
+        let latDelta: CLLocationDegrees = 0.01
+        let lonDelta: CLLocationDegrees = 0.01
+        let span: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+        let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        let region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+        wineryMap.setRegion(region, animated: true)
+        
+        //annotation on the map
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = listOfWineries[rowCounter].name
+        wineryMap.addAnnotation(annotation)
     }
 
     override func didReceiveMemoryWarning() {

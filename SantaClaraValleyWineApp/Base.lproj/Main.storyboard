@@ -314,6 +314,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PHs-B1-juX">
+                                        <rect key="frame" x="0.0" y="430" width="375" height="170"/>
+                                        <animations/>
+                                    </mapView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Quc-Mn-Fh6">
                                         <rect key="frame" x="20" y="309" width="335" height="21"/>
                                         <animations/>
@@ -374,6 +378,7 @@
                         <outlet property="navigationBar" destination="oob-Oe-06Y" id="hWY-Ea-K7g"/>
                         <outlet property="phoneNumberLabel" destination="j23-LT-WtM" id="3Ls-yU-N92"/>
                         <outlet property="websiteLabel" destination="15R-mH-oWn" id="Dww-fb-zVd"/>
+                        <outlet property="wineryMap" destination="PHs-B1-juX" id="fKN-nk-zo3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9BJ-dL-Gdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
