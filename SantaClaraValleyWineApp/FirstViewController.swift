@@ -21,15 +21,15 @@ struct Associates
 struct Wineries
 {
     var name: String!
-    var hours: String?
-    var phoneNumber: String?
-    var address: String?
-    var websiteOrEmail: String?
-    var latitude: String?
-    var longitude: String?
+    var hours: String!
+    var phoneNumber: String!
+    var address: String!
+    var websiteOrEmail: String!
+    var latitude: String!
+    var longitude: String!
 }
 var listOfAssociates = [String: Associates]()
-var listOfWineries = [String:Wineries]()
+var listOfWineries = [Wineries]()
 
 class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
 
@@ -41,9 +41,9 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         super.viewDidLoad()
         readWineriesFile()
         print(listOfWineries.count)
-        for (theWineryName, theWineryObj) in listOfWineries
+        for (theWineryName) in listOfWineries
         {
-            print("\(theWineryName) :  \(theWineryObj.phoneNumber!)")
+            print("\(theWineryName.name) ")
         }
         readAssociatesFile()
         print(listOfAssociates.count + 1)
@@ -96,6 +96,7 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         for var i = 0; i < arrayOfWineries.count-1; i++
         {
             var eachWinery = arrayOfWineries[i].componentsSeparatedByString(";")
+            var obj = Wineries()
             for var j = 0; j < eachWinery.count-1; j++
             {
                 let name = eachWinery[0]
@@ -105,16 +106,17 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
                 let link =  eachWinery[4]
                 let lat = eachWinery[5]
                 let lon = eachWinery[6]
-                var obj = Wineries()
-                obj.name = name
+                
+                obj.name = name as String!
                 obj.hours = hours
                 obj.phoneNumber = number
                 obj.address = address
                 obj.websiteOrEmail = link
                 obj.latitude = lat
                 obj.longitude = lon
-                listOfWineries[obj.name!] = obj
+                
             }
+            listOfWineries.append(obj)
         }
         
     }
@@ -164,11 +166,11 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         }
         var annotations:Array = [annotate]()
         
-        for (theKey, theValue) in listOfWineries
+        for (theKey) in listOfWineries
         {
-            let lat = theValue.latitude
-            let lon = theValue.longitude
-            let title = theKey
+            let lat = theKey.latitude
+            let lon = theKey.longitude
+            let title = theKey.name as String!
             let annot = annotate(latitude: Double(lat!)!,longitude: Double(lon!)!,title: title)
             annotations.append(annot)
         }
@@ -180,7 +182,7 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
             let pinCoordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
             let thePin = MKPointAnnotation()
             thePin.coordinate = pinCoordinate
-            thePin.title = "\(item.title)"
+            thePin.title = "\(item.title!)"
             map.addAnnotation(thePin)
         }
 
