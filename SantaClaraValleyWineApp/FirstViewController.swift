@@ -27,6 +27,7 @@ struct Wineries
     var websiteOrEmail: String!
     var latitude: String!
     var longitude: String!
+    var description: String!
 }
 var listOfAssociates = [String: Associates]()
 var listOfWineries = [Wineries]()
@@ -106,6 +107,7 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
                 let link =  eachWinery[4]
                 let lat = eachWinery[5]
                 let lon = eachWinery[6]
+                let des = eachWinery[7]
                 
                 obj.name = name as String!
                 obj.hours = hours
@@ -114,6 +116,7 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
                 obj.websiteOrEmail = link
                 obj.latitude = lat
                 obj.longitude = lon
+                obj.description = des
                 
             }
             listOfWineries.append(obj)

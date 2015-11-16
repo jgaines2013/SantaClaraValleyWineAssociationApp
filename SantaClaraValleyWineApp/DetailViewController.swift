@@ -21,7 +21,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         textView.editable = false
         textView.dataDetectorTypes = UIDataDetectorTypes.All
         
-        textView.text = "Hours of Operations: " + listOfWineries[rowCounter].hours + "\n\nAddress: " + listOfWineries[rowCounter].address + "\n\nWebsite: " + listOfWineries[rowCounter].websiteOrEmail + "\n\nPhone Number: " + listOfWineries[rowCounter].phoneNumber + "\n\nDescription: "
+        textView.text = "Hours of Operations: " + listOfWineries[rowCounter].hours + "\n\nAddress: " + listOfWineries[rowCounter].address + "\n\nWebsite: " + listOfWineries[rowCounter].websiteOrEmail + "\n\nPhone Number: " + listOfWineries[rowCounter].phoneNumber + "\n\nDescription: " + listOfWineries[rowCounter].description
 
         
         //Map setup
