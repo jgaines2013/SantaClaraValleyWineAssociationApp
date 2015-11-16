@@ -18,6 +18,12 @@ struct Associates
     var website: String?
 }
 
+struct Events
+{
+    var name: String!
+    var website: String!
+}
+
 struct Wineries
 {
     var name: String!
@@ -29,8 +35,9 @@ struct Wineries
     var longitude: String!
     var description: String!
 }
-var listOfAssociates = [String: Associates]()
+var listOfAssociates = [Associates]()
 var listOfWineries = [Wineries]()
+var listOfEvents = [Events]()
 
 class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
 
@@ -48,9 +55,9 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         }
         readAssociatesFile()
         print(listOfAssociates.count + 1)
-        for (theAssociationName, theAssociationObj) in listOfAssociates
+        for (theAssociationName) in listOfAssociates
         {
-            print("\(theAssociationName) :  \(theAssociationObj.phoneNumber!)")
+            print("\(theAssociationName.name)")
         }
         
         locationManager.delegate = self
@@ -142,19 +149,50 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         for var i = 0; i < arrayOfAssociates.count-1; i++
         {
             var eachAssociate = arrayOfAssociates[i].componentsSeparatedByString(";")
+            var obj = Associates()
             for var j = 0; j < eachAssociate.count-1; j++
             {
                 let name = eachAssociate[0]
                 let number = eachAssociate[1]
                 let address = eachAssociate[2]
                 let link =  eachAssociate[3]
-                var obj = Associates()
+                
                 obj.name = name
                 obj.phoneNumber = number
                 obj.address = address
                 obj.website = link
-                listOfAssociates[obj.name!] = obj
             }
+            listOfAssociates.append(obj)
+        }
+
+    }
+    
+    func readEventsFile()
+    {
+        let path = NSBundle.mainBundle().pathForResource("events", ofType: "txt")
+        var text=""
+        do{
+            text = try NSString(contentsOfFile: path!, encoding: NSUTF8StringEncoding) as String
+            //print(text)
+        }
+        catch{
+            print("error reading associates file")
+        }
+        var arrayOfEvents = text.componentsSeparatedByString("$")
+        
+        for var i = 0; i < arrayOfEvents.count-1; i++
+        {
+            var eachEvent = arrayOfEvents[i].componentsSeparatedByString(";")
+            var obj = Events()
+            for var j = 0; j < eachEvent.count-1; j++
+            {
+                let name = eachEvent[0]
+                let site = eachEvent[1]
+
+                obj.name = name
+                obj.website = site
+            }
+            listOfEvents.append(obj)
         }
 
     }

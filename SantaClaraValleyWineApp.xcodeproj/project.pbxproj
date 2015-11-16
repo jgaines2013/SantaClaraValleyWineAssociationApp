@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049195BF1BF987B400EEFC6C /* events.txt in Resources */ = {isa = PBXBuildFile; fileRef = 049195BE1BF987B400EEFC6C /* events.txt */; };
 		9F5340051BD2A43D000FEE0F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5340041BD2A43D000FEE0F /* FifthViewController.swift */; };
 		9F6723311BEF6414008E7CEC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6723301BEF6414008E7CEC /* DetailViewController.swift */; };
 		9FB2DC191BC70F3700FF342C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB2DC181BC70F3700FF342C /* logo.png */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		049195BE1BF987B400EEFC6C /* events.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = events.txt; sourceTree = "<group>"; };
 		9F5340041BD2A43D000FEE0F /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		9F6723301BEF6414008E7CEC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9FB2DC181BC70F3700FF342C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				9FBA4E961BF423DE005FE6EB /* wine65.png */,
 				9FBD7E0C1BE4534600A46028 /* wineries.txt */,
 				9FFFFC5C1BDDAF06005EE60D /* associates.txt */,
+				049195BE1BF987B400EEFC6C /* events.txt */,
 				9FD06EA51BC46540006E3DF7 /* Assets.xcassets */,
 				9FD06EA71BC46540006E3DF7 /* LaunchScreen.storyboard */,
 				9FD06EAA1BC46540006E3DF7 /* Info.plist */,
@@ -170,6 +173,7 @@
 				9FD06EA61BC46540006E3DF7 /* Assets.xcassets in Resources */,
 				9FBA4E971BF423DE005FE6EB /* wine65.png in Resources */,
 				9FBA4E951BF4232A005FE6EB /* map-pointer_small.png in Resources */,
+				049195BF1BF987B400EEFC6C /* events.txt in Resources */,
 				9FD06EA41BC46540006E3DF7 /* Main.storyboard in Resources */,
 				9FBA4E9B1BF42407005FE6EB /* drinks13.png in Resources */,
 				9FBA4E9D1BF42414005FE6EB /* bottle26.png in Resources */,
