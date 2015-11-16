@@ -1,5 +1,6 @@
 //
 //  FourthViewController.swift
+//  THIS IS THE EVENTS PAGE
 //  SantaClaraValleyWineApp
 //
 //  Created by Naghmeh on 10/8/15.
@@ -10,9 +11,14 @@ import UIKit
 
 class FourthViewController: UIViewController {
     
+    @IBOutlet var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        textView.editable = false
+        textView.dataDetectorTypes = UIDataDetectorTypes.All
+        
+        textView.text = "Association Events: \n\n" + listOfEvents[0].name + "\n" + listOfEvents[0].website + "\n\n Member Events:\n" + listOfEvents[1].name + "\n" + listOfEvents[1].website
            }
     
     override func didReceiveMemoryWarning() {

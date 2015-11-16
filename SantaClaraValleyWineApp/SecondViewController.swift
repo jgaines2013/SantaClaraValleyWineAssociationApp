@@ -1,5 +1,6 @@
 //
 //  SecondViewController.swift
+//  THIS IS THE ABOUT US PAGE
 //  SantaClaraValleyWineApp
 //
 //  Created by Naghmeh on 10/6/15.

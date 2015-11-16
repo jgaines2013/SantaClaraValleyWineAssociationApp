@@ -1,5 +1,6 @@
 //
 //  FirstViewController.swift
+//  THIS IS THE HOME PAGE WITH THE MAP
 //  SantaClaraValleyWineApp
 //
 //  Created by Naghmeh on 10/6/15.
@@ -59,6 +60,8 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         {
             print("\(theAssociationName.name)")
         }
+        readEventsFile()
+        print(listOfEvents)
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -176,7 +179,7 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
             //print(text)
         }
         catch{
-            print("error reading associates file")
+            print("error reading Events file")
         }
         var arrayOfEvents = text.componentsSeparatedByString("$")
         
