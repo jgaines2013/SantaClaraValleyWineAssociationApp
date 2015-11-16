@@ -56,9 +56,9 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        let latitude:CLLocationDegrees = 37.3382
+        let latitude:CLLocationDegrees = 37.2368473
         
-        let longitude:CLLocationDegrees = -121.8863
+        let longitude:CLLocationDegrees = -121.7964655
         
         let latDelta:CLLocationDegrees = 0.8
         

@@ -13,20 +13,16 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     
     
     @IBOutlet var navigationBar: UINavigationBar!
-    @IBOutlet var hoursLabel: UILabel!
-    @IBOutlet var addressLabel: UILabel!
-    @IBOutlet var websiteLabel: UILabel!
-    @IBOutlet var DescriptionLabel: UILabel!
-    @IBOutlet var phoneNumberLabel: UILabel!
+    @IBOutlet var textView: UITextView!
     @IBOutlet var wineryMap: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.topItem?.title = listOfWineries[rowCounter].name
-        hoursLabel.text = "Hours of Operations: " + listOfWineries[rowCounter].hours
-        addressLabel.text = "Address: " + listOfWineries[rowCounter].address
-        websiteLabel.text = listOfWineries[rowCounter].websiteOrEmail
-        phoneNumberLabel.text = "Phone Number: " + listOfWineries[rowCounter].phoneNumber
-      
+        textView.editable = false
+        textView.dataDetectorTypes = UIDataDetectorTypes.All
+        
+        textView.text = "Hours of Operations: " + listOfWineries[rowCounter].hours + "\n\nAddress: " + listOfWineries[rowCounter].address + "\n\nWebsite: " + listOfWineries[rowCounter].websiteOrEmail + "\n\nPhone Number: " + listOfWineries[rowCounter].phoneNumber + "\n\nDescription: "
+
         
         //Map setup
         let latitude: CLLocationDegrees = Double(listOfWineries[rowCounter].latitude)!
