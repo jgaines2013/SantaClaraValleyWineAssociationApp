@@ -26,7 +26,7 @@ class ThirdViewController: UIViewController, UITableViewDelegate{
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
 
         cell!.textLabel?.text = listOfWineries[indexPath.row].name
-        cell!.detailTextLabel?.text = listOfWineries[indexPath.row].address + " " + listOfWineries[indexPath.row].hours
+        cell!.detailTextLabel?.text = listOfWineries[indexPath.row].hours
         cell!.backgroundColor = UIColor.blackColor()
         cell!.textLabel?.textColor = UIColor.whiteColor()
         cell!.detailTextLabel?.textColor = UIColor.whiteColor()
