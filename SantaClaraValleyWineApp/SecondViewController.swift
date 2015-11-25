@@ -14,9 +14,9 @@ class SecondViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        textView.scrollRangeToVisible(NSRange(location: 0,length: 0))
-        
-        
+        textView.scrollRangeToVisible(NSMakeRange(0,0))
+        textView.setContentOffset(CGPointZero, animated: false)
+        self.automaticallyAdjustsScrollViewInsets = false
     }
     @IBOutlet var textView: UITextView!
 

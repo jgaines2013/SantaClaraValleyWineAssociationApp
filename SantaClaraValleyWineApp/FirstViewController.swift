@@ -23,6 +23,7 @@ struct Events
 {
     var name: String!
     var website: String!
+    var date: String!
 }
 
 struct Wineries
@@ -191,9 +192,11 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
             {
                 let name = eachEvent[0]
                 let site = eachEvent[1]
+                let when = eachEvent[2]
 
                 obj.name = name
                 obj.website = site
+                obj.date = when
             }
             listOfEvents.append(obj)
         }

@@ -18,7 +18,7 @@ class FourthViewController: UIViewController {
         textView.editable = false
         textView.dataDetectorTypes = UIDataDetectorTypes.All
         
-        textView.text = "Association Events: \n\n" + listOfEvents[0].name + "\n" + listOfEvents[0].website + "\n\n Member Events:\n" + listOfEvents[1].name + "\n" + listOfEvents[1].website
+        textView.text = "Association Events: \n\n" + listOfEvents[0].name + "\n" + listOfEvents[0].date + listOfEvents[0].website + "\n\n Member Events:\n" + listOfEvents[1].name + "\n" + listOfEvents[1].date + "\n" + listOfEvents[1].website
            }
     
     override func didReceiveMemoryWarning() {

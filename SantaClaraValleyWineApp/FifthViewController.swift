@@ -1,6 +1,6 @@
 //
 //  FifthViewController.swift
-//  THIS IS THE SEARCH PAGE
+//  THIS IS THE ASSOCIATES PAGE
 //  SantaClaraValleyWineApp
 //
 //  Created by Naghmeh on 10/17/15.
@@ -14,7 +14,6 @@ class FifthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        textView.editable = false
 
     }
     
