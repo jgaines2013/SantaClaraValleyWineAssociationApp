@@ -14,19 +14,21 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet var navigationBar: UINavigationBar!
     @IBOutlet var textView: UITextView!
+    @IBOutlet var logo: UIImageView!
     @IBOutlet var wineryMap: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.topItem?.title = listOfWineries[rowCounter].name
+        
+        navigationBar.topItem?.title = listOfWineries[wineriesRow].name
         textView.editable = false
         textView.dataDetectorTypes = UIDataDetectorTypes.All
         
-        textView.text = "Hours of Operations: " + listOfWineries[rowCounter].hours + "\n\nAddress: " + listOfWineries[rowCounter].address + "\n\nWebsite: " + listOfWineries[rowCounter].websiteOrEmail + "\n\nPhone Number: " + listOfWineries[rowCounter].phoneNumber + "\n\nDescription: " + listOfWineries[rowCounter].description
-
+        textView.text = "Hours of Operations: " + listOfWineries[wineriesRow].hours + "\n\nAddress: " + listOfWineries[wineriesRow].address + "\n\nWebsite: " + listOfWineries[wineriesRow].websiteOrEmail + "\n\nPhone Number: " + listOfWineries[wineriesRow].phoneNumber + "\n\nDescription: " + listOfWineries[wineriesRow].description
+        logo.image = UIImage(named: listOfWineries[wineriesRow].picture)
         
         //Map setup
-        let latitude: CLLocationDegrees = Double(listOfWineries[rowCounter].latitude)!
-        let longitude: CLLocationDegrees = Double(listOfWineries[rowCounter].longitude)!
+        let latitude: CLLocationDegrees = Double(listOfWineries[wineriesRow].latitude)!
+        let longitude: CLLocationDegrees = Double(listOfWineries[wineriesRow].longitude)!
         let latDelta: CLLocationDegrees = 0.01
         let lonDelta: CLLocationDegrees = 0.01
         let span: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
@@ -37,7 +39,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         //annotation on the map
         let annotation = MKPointAnnotation()
         annotation.coordinate = location
-        annotation.title = listOfWineries[rowCounter].name
+        annotation.title = listOfWineries[wineriesRow].name
         wineryMap.addAnnotation(annotation)
     }
 
@@ -45,7 +47,11 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    override func viewDidLayoutSubviews() {
+        self.textView.setContentOffset(CGPointMake(0, 0), animated: false)
+    }
+
 
     /*
     // MARK: - Navigation

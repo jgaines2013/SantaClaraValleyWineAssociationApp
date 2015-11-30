@@ -8,13 +8,13 @@
 //
 
 import UIKit
-var rowCounter = 0
+var wineriesRow = 0
 class ThirdViewController: UIViewController, UITableViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print(rowCounter)
+        print(wineriesRow)
         
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -31,14 +31,21 @@ class ThirdViewController: UIViewController, UITableViewDelegate{
         cell!.textLabel?.textColor = UIColor.whiteColor()
         cell!.detailTextLabel?.textColor = UIColor.whiteColor()
         
+        let pict = listOfWineries[indexPath.row].picture!
+
+//        //cell?.imageView?.contentMode = UIViewContentMode.ScaleToFill
+//        //cell?.imageView?.clipsToBounds = true
+        cell?.imageView?.image = UIImage(named: pict)
+        cell?.imageView?.sizeToFit()
+        
         return cell!
     }
     
     
     func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath)->NSIndexPath?
     {
-        rowCounter = indexPath.row
-        print(rowCounter)
+        wineriesRow = indexPath.row
+        print(wineriesRow)
         return indexPath
     }
     

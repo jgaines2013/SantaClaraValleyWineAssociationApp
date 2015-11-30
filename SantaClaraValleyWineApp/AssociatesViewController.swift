@@ -10,8 +10,14 @@ import UIKit
 
 class AssociatesViewController: UIViewController {
 
+    @IBOutlet var associateNavigation: UINavigationItem!
+    @IBOutlet var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        textView.editable = false
+        textView.dataDetectorTypes = UIDataDetectorTypes.All
+        associateNavigation.title = listOfAssociates[associatesRow].name
+        textView.text = "\nPhone Number: " + listOfAssociates[associatesRow].phoneNumber! + "\n\n\nAddress: " + listOfAssociates[associatesRow].address! + "\n\n\nWebsite: " + listOfAssociates[associatesRow].website!
 
         // Do any additional setup after loading the view.
     }

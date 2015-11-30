@@ -36,6 +36,7 @@ struct Wineries
     var latitude: String!
     var longitude: String!
     var description: String!
+    var picture: String!
 }
 var listOfAssociates = [Associates]()
 var listOfWineries = [Wineries]()
@@ -119,6 +120,7 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
                 let lat = eachWinery[5]
                 let lon = eachWinery[6]
                 let des = eachWinery[7]
+                let pic = eachWinery[8]
                 
                 obj.name = name as String!
                 obj.hours = hours
@@ -128,6 +130,7 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
                 obj.latitude = lat
                 obj.longitude = lon
                 obj.description = des
+                obj.picture = pic
                 
             }
             listOfWineries.append(obj)
@@ -231,10 +234,26 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
             thePin.coordinate = pinCoordinate
             thePin.title = "\(item.title!)"
             map.addAnnotation(thePin)
+            
         }
 
     }
     
+//    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+//        var view = mapView.dequeueReusableAnnotationViewWithIdentifier("wineAnnotationView") as? MKPinAnnotationView
+//        if view == nil{
+//            view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "wineAnnotationView") 
+//            view?.canShowCallout = true
+//            view?.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
+//        }
+//        else{
+//            view?.annotation = annotation
+//        }
+//        return view
+//    }
+//    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+//        performSegueWithIdentifier(<#T##identifier: String##String#>, sender: <#T##AnyObject?#>)
+//    }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
   

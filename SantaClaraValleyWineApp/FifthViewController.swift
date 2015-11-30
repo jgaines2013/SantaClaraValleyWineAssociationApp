@@ -9,16 +9,14 @@
 
 import UIKit
 
+var associatesRow = 0
 class FifthViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-     
-
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        print(listOfAssociates.count)
         return listOfAssociates.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
@@ -27,7 +25,7 @@ class FifthViewController: UIViewController, UITableViewDelegate {
         
         cell!.textLabel?.text = listOfAssociates[indexPath.row].name
         cell!.detailTextLabel?.text = listOfAssociates[indexPath.row].address
-        cell!.backgroundColor = UIColor.lightGrayColor()
+        cell!.backgroundColor = UIColor.blackColor()
         cell!.textLabel?.textColor = UIColor.whiteColor()
         cell!.detailTextLabel?.textColor = UIColor.whiteColor()
         
@@ -35,8 +33,8 @@ class FifthViewController: UIViewController, UITableViewDelegate {
     }
     func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath)->NSIndexPath?
     {
-        //rowCounter = indexPath.row
-        //print(rowCounter)
+        associatesRow = indexPath.row
+        print(associatesRow)
         return indexPath
     }
     
