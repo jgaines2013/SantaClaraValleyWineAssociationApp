@@ -10,7 +10,6 @@
 		049195BF1BF987B400EEFC6C /* events.txt in Resources */ = {isa = PBXBuildFile; fileRef = 049195BE1BF987B400EEFC6C /* events.txt */; };
 		9F5340051BD2A43D000FEE0F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5340041BD2A43D000FEE0F /* FifthViewController.swift */; };
 		9F63581C1C0BE45600320303 /* AverFamilyVineyards.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358051C0BE45600320303 /* AverFamilyVineyards.png */; };
-		9F63581D1C0BE45600320303 /* CasadeFruta.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358061C0BE45600320303 /* CasadeFruta.png */; };
 		9F63581E1C0BE45600320303 /* castilloshillsidewinery.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358071C0BE45600320303 /* castilloshillsidewinery.png */; };
 		9F63581F1C0BE45600320303 /* ClosLaChance.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358081C0BE45600320303 /* ClosLaChance.png */; };
 		9F6358201C0BE45600320303 /* CooperGarrodWinery.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358091C0BE45600320303 /* CooperGarrodWinery.png */; };
@@ -27,14 +26,17 @@
 		9F6358301C0BE45600320303 /* SolisWinery.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358191C0BE45600320303 /* SolisWinery.png */; };
 		9F6358311C0BE45600320303 /* StephaniaWine.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F63581A1C0BE45600320303 /* StephaniaWine.png */; };
 		9F6358321C0BE45600320303 /* SycamoreCreek.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F63581B1C0BE45600320303 /* SycamoreCreek.png */; };
-		9F6358371C0BFA0700320303 /* RapazziniWinery.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358331C0BFA0700320303 /* RapazziniWinery.png */; };
-		9F6358381C0BFA0700320303 /* SarahsVineyard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358341C0BFA0700320303 /* SarahsVineyard.png */; };
-		9F6358391C0BFA0700320303 /* SatoriCellars.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358351C0BFA0700320303 /* SatoriCellars.png */; };
-		9F63583A1C0BFA0700320303 /* SeekerVineyard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358361C0BFA0700320303 /* SeekerVineyard.png */; };
-		9F63583E1C0BFA1700320303 /* miramar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F63583B1C0BFA1700320303 /* miramar.png */; };
-		9F63583F1C0BFA1700320303 /* Ross.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F63583C1C0BFA1700320303 /* Ross.png */; };
-		9F6358401C0BFA1700320303 /* SunlitOaks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F63583D1C0BFA1700320303 /* SunlitOaks.png */; };
 		9F6358421C0C1D0300320303 /* MartinRanchWinery.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358411C0C1D0300320303 /* MartinRanchWinery.png */; };
+		9F6358441C0C229300320303 /* CasadeFruta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358431C0C229300320303 /* CasadeFruta.jpg */; };
+		9F63584C1C0CDEC200320303 /* SCWALogo .png in Resources */ = {isa = PBXBuildFile; fileRef = 9F63584B1C0CDEC200320303 /* SCWALogo .png */; };
+		9F63584E1C0D26B300320303 /* miramar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F63584D1C0D26B300320303 /* miramar.png */; };
+		9F6358501C0D27E700320303 /* backdrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F63584F1C0D27E700320303 /* backdrop.png */; };
+		9F6358521C0D289500320303 /* SunlitOaks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358511C0D289500320303 /* SunlitOaks.png */; };
+		9F6358541C0D291D00320303 /* SeekerVineyard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358531C0D291D00320303 /* SeekerVineyard.png */; };
+		9F6358561C0D2DF900320303 /* SarahsVineyard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358551C0D2DF900320303 /* SarahsVineyard.png */; };
+		9F6358581C0D2E7600320303 /* RapazziniWinery.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358571C0D2E7600320303 /* RapazziniWinery.png */; };
+		9F63585A1C0D2EED00320303 /* SatoriCellars.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6358591C0D2EED00320303 /* SatoriCellars.png */; };
+		9F63585C1C0D2F5800320303 /* Ross.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F63585B1C0D2F5800320303 /* Ross.png */; };
 		9F6723311BEF6414008E7CEC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6723301BEF6414008E7CEC /* DetailViewController.swift */; };
 		9F8745611C06337C00532A6D /* AssociatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8745601C06337C00532A6D /* AssociatesViewController.swift */; };
 		9FB2DC191BC70F3700FF342C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB2DC181BC70F3700FF342C /* logo.png */; };
@@ -60,7 +62,6 @@
 		049195BE1BF987B400EEFC6C /* events.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = events.txt; sourceTree = "<group>"; };
 		9F5340041BD2A43D000FEE0F /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		9F6358051C0BE45600320303 /* AverFamilyVineyards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AverFamilyVineyards.png; sourceTree = "<group>"; };
-		9F6358061C0BE45600320303 /* CasadeFruta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CasadeFruta.png; sourceTree = "<group>"; };
 		9F6358071C0BE45600320303 /* castilloshillsidewinery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = castilloshillsidewinery.png; sourceTree = "<group>"; };
 		9F6358081C0BE45600320303 /* ClosLaChance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClosLaChance.png; sourceTree = "<group>"; };
 		9F6358091C0BE45600320303 /* CooperGarrodWinery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CooperGarrodWinery.png; sourceTree = "<group>"; };
@@ -77,14 +78,17 @@
 		9F6358191C0BE45600320303 /* SolisWinery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SolisWinery.png; sourceTree = "<group>"; };
 		9F63581A1C0BE45600320303 /* StephaniaWine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StephaniaWine.png; sourceTree = "<group>"; };
 		9F63581B1C0BE45600320303 /* SycamoreCreek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SycamoreCreek.png; sourceTree = "<group>"; };
-		9F6358331C0BFA0700320303 /* RapazziniWinery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RapazziniWinery.png; sourceTree = "<group>"; };
-		9F6358341C0BFA0700320303 /* SarahsVineyard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SarahsVineyard.png; sourceTree = "<group>"; };
-		9F6358351C0BFA0700320303 /* SatoriCellars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SatoriCellars.png; sourceTree = "<group>"; };
-		9F6358361C0BFA0700320303 /* SeekerVineyard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SeekerVineyard.png; sourceTree = "<group>"; };
-		9F63583B1C0BFA1700320303 /* miramar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miramar.png; sourceTree = "<group>"; };
-		9F63583C1C0BFA1700320303 /* Ross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ross.png; sourceTree = "<group>"; };
-		9F63583D1C0BFA1700320303 /* SunlitOaks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SunlitOaks.png; sourceTree = "<group>"; };
 		9F6358411C0C1D0300320303 /* MartinRanchWinery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MartinRanchWinery.png; sourceTree = "<group>"; };
+		9F6358431C0C229300320303 /* CasadeFruta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CasadeFruta.jpg; sourceTree = "<group>"; };
+		9F63584B1C0CDEC200320303 /* SCWALogo .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SCWALogo .png"; sourceTree = "<group>"; };
+		9F63584D1C0D26B300320303 /* miramar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miramar.png; sourceTree = "<group>"; };
+		9F63584F1C0D27E700320303 /* backdrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backdrop.png; sourceTree = "<group>"; };
+		9F6358511C0D289500320303 /* SunlitOaks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SunlitOaks.png; sourceTree = "<group>"; };
+		9F6358531C0D291D00320303 /* SeekerVineyard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SeekerVineyard.png; sourceTree = "<group>"; };
+		9F6358551C0D2DF900320303 /* SarahsVineyard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SarahsVineyard.png; sourceTree = "<group>"; };
+		9F6358571C0D2E7600320303 /* RapazziniWinery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RapazziniWinery.png; sourceTree = "<group>"; };
+		9F6358591C0D2EED00320303 /* SatoriCellars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SatoriCellars.png; sourceTree = "<group>"; };
+		9F63585B1C0D2F5800320303 /* Ross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ross.png; sourceTree = "<group>"; };
 		9F6723301BEF6414008E7CEC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9F8745601C06337C00532A6D /* AssociatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociatesViewController.swift; sourceTree = "<group>"; };
 		9FB2DC181BC70F3700FF342C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -123,28 +127,30 @@
 		9F6358041C0BE16900320303 /* pics */ = {
 			isa = PBXGroup;
 			children = (
+				9F63584B1C0CDEC200320303 /* SCWALogo .png */,
+				9F63584D1C0D26B300320303 /* miramar.png */,
 				9F6358051C0BE45600320303 /* AverFamilyVineyards.png */,
-				9F6358061C0BE45600320303 /* CasadeFruta.png */,
 				9F6358071C0BE45600320303 /* castilloshillsidewinery.png */,
 				9F6358081C0BE45600320303 /* ClosLaChance.png */,
+				9F6358531C0D291D00320303 /* SeekerVineyard.png */,
 				9F6358091C0BE45600320303 /* CooperGarrodWinery.png */,
 				9F63580A1C0BE45600320303 /* CreekviewVineyards.png */,
 				9F63580B1C0BE45600320303 /* Fortino.png */,
 				9F63580C1C0BE45600320303 /* guglielmowinery.png */,
 				9F63580D1C0BE45600320303 /* HeckerPassWinery.png */,
 				9F63580E1C0BE45600320303 /* JasonStephensWinery.png */,
+				9F6358511C0D289500320303 /* SunlitOaks.png */,
+				9F63585B1C0D2F5800320303 /* Ross.png */,
 				9F63580F1C0BE45600320303 /* JLohr.png */,
-				9F6358331C0BFA0700320303 /* RapazziniWinery.png */,
-				9F6358341C0BFA0700320303 /* SarahsVineyard.png */,
-				9F63583B1C0BFA1700320303 /* miramar.png */,
-				9F63583C1C0BFA1700320303 /* Ross.png */,
-				9F63583D1C0BFA1700320303 /* SunlitOaks.png */,
-				9F6358351C0BFA0700320303 /* SatoriCellars.png */,
-				9F6358361C0BFA0700320303 /* SeekerVineyard.png */,
+				9F63584F1C0D27E700320303 /* backdrop.png */,
+				9F6358571C0D2E7600320303 /* RapazziniWinery.png */,
 				9F6358101C0BE45600320303 /* KiriginCellars.png */,
 				9F6358111C0BE45600320303 /* LightheartCellars.png */,
 				9F6358411C0C1D0300320303 /* MartinRanchWinery.png */,
 				9F6358121C0BE45600320303 /* LionRanch.png */,
+				9F6358591C0D2EED00320303 /* SatoriCellars.png */,
+				9F6358551C0D2DF900320303 /* SarahsVineyard.png */,
+				9F6358431C0C229300320303 /* CasadeFruta.jpg */,
 				9F6358141C0BE45600320303 /* MorganHillCellars.png */,
 				9F6358191C0BE45600320303 /* SolisWinery.png */,
 				9F63581A1C0BE45600320303 /* StephaniaWine.png */,
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FB2DC191BC70F3700FF342C /* logo.png in Resources */,
+				9F6358441C0C229300320303 /* CasadeFruta.jpg in Resources */,
+				9F63585C1C0D2F5800320303 /* Ross.png in Resources */,
 				9F6358321C0BE45600320303 /* SycamoreCreek.png in Resources */,
 				9F6358251C0BE45600320303 /* JasonStephensWinery.png in Resources */,
 				9FD06EA91BC46540006E3DF7 /* LaunchScreen.storyboard in Resources */,
@@ -266,35 +274,35 @@
 				9FD06EA61BC46540006E3DF7 /* Assets.xcassets in Resources */,
 				9F6358311C0BE45600320303 /* StephaniaWine.png in Resources */,
 				9F63581F1C0BE45600320303 /* ClosLaChance.png in Resources */,
-				9F63581D1C0BE45600320303 /* CasadeFruta.png in Resources */,
 				9F63581C1C0BE45600320303 /* AverFamilyVineyards.png in Resources */,
 				9F6358421C0C1D0300320303 /* MartinRanchWinery.png in Resources */,
-				9F63583E1C0BFA1700320303 /* miramar.png in Resources */,
+				9F6358581C0D2E7600320303 /* RapazziniWinery.png in Resources */,
 				9FBA4E971BF423DE005FE6EB /* wine65.png in Resources */,
 				9FBA4E951BF4232A005FE6EB /* map-pointer_small.png in Resources */,
 				9F6358211C0BE45600320303 /* CreekviewVineyards.png in Resources */,
 				049195BF1BF987B400EEFC6C /* events.txt in Resources */,
 				9FD06EA41BC46540006E3DF7 /* Main.storyboard in Resources */,
 				9F6358291C0BE45600320303 /* LionRanch.png in Resources */,
-				9F6358401C0BFA1700320303 /* SunlitOaks.png in Resources */,
+				9F6358541C0D291D00320303 /* SeekerVineyard.png in Resources */,
 				9FBA4E9B1BF42407005FE6EB /* drinks13.png in Resources */,
-				9F6358381C0BFA0700320303 /* SarahsVineyard.png in Resources */,
+				9F6358501C0D27E700320303 /* backdrop.png in Resources */,
 				9F63581E1C0BE45600320303 /* castilloshillsidewinery.png in Resources */,
 				9F6358271C0BE45600320303 /* KiriginCellars.png in Resources */,
 				9F63582B1C0BE45600320303 /* MorganHillCellars.png in Resources */,
 				9F6358281C0BE45600320303 /* LightheartCellars.png in Resources */,
-				9F6358391C0BFA0700320303 /* SatoriCellars.png in Resources */,
-				9F63583A1C0BFA0700320303 /* SeekerVineyard.png in Resources */,
-				9F63583F1C0BFA1700320303 /* Ross.png in Resources */,
 				9F6358221C0BE45600320303 /* Fortino.png in Resources */,
 				9FBA4E9D1BF42414005FE6EB /* bottle26.png in Resources */,
+				9F6358521C0D289500320303 /* SunlitOaks.png in Resources */,
 				9F6358261C0BE45600320303 /* JLohr.png in Resources */,
 				9F6358301C0BE45600320303 /* SolisWinery.png in Resources */,
 				9FBA4E991BF423FE005FE6EB /* fruit17.png in Resources */,
-				9F6358371C0BFA0700320303 /* RapazziniWinery.png in Resources */,
+				9F6358561C0D2DF900320303 /* SarahsVineyard.png in Resources */,
+				9F63584C1C0CDEC200320303 /* SCWALogo .png in Resources */,
 				9F6358231C0BE45600320303 /* guglielmowinery.png in Resources */,
+				9F63585A1C0D2EED00320303 /* SatoriCellars.png in Resources */,
 				9FBD7E0D1BE4534600A46028 /* wineries.txt in Resources */,
 				9FFFFC5D1BDDAF06005EE60D /* associates.txt in Resources */,
+				9F63584E1C0D26B300320303 /* miramar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

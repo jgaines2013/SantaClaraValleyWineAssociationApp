@@ -31,12 +31,11 @@ class ThirdViewController: UIViewController, UITableViewDelegate{
         cell!.textLabel?.textColor = UIColor.whiteColor()
         cell!.detailTextLabel?.textColor = UIColor.whiteColor()
         
-        let pict = listOfWineries[indexPath.row].picture!
+        //let pict = listOfWineries[indexPath.row].picture!
 
 //        //cell?.imageView?.contentMode = UIViewContentMode.ScaleToFill
 //        //cell?.imageView?.clipsToBounds = true
-        cell?.imageView?.image = UIImage(named: pict)
-        cell?.imageView?.sizeToFit()
+        //cell?.imageView?.image = UIImage(named: pict)
         
         return cell!
     }
