@@ -345,16 +345,16 @@
                                 <rect key="frame" x="119" y="20" width="136" height="134"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="136" id="8LR-BW-xAK"/>
-                                    <constraint firstAttribute="height" constant="134" id="owq-xk-KLU"/>
+                                    <constraint firstAttribute="width" constant="136" id="8HD-MQ-Wfk"/>
+                                    <constraint firstAttribute="height" constant="134" id="Ix9-Kc-YFs"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wineries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVR-x6-IqT">
                                 <rect key="frame" x="141" y="162" width="92" height="29"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="1xI-le-jYa"/>
-                                    <constraint firstAttribute="width" constant="92" id="KLk-Eg-RCs"/>
+                                    <constraint firstAttribute="width" constant="92" id="Tq8-qc-hER"/>
+                                    <constraint firstAttribute="height" constant="29" id="lWQ-Z3-cP6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="19"/>
                                 <nil key="highlightedColor"/>
@@ -406,14 +406,14 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qt1-Cc-EeI" firstAttribute="centerX" secondItem="9cK-ZN-7Ec" secondAttribute="centerX" id="4Pw-VD-Gk7"/>
-                            <constraint firstItem="z2h-eV-Ldr" firstAttribute="centerX" secondItem="TVR-x6-IqT" secondAttribute="centerX" id="51p-b1-GMV"/>
-                            <constraint firstItem="z2h-eV-Ldr" firstAttribute="leading" secondItem="9cK-ZN-7Ec" secondAttribute="leading" id="68c-yg-1wx"/>
-                            <constraint firstItem="TVR-x6-IqT" firstAttribute="top" secondItem="qt1-Cc-EeI" secondAttribute="bottom" constant="8" symbolic="YES" id="K0j-kt-iEq"/>
-                            <constraint firstItem="z2h-eV-Ldr" firstAttribute="top" secondItem="TVR-x6-IqT" secondAttribute="bottom" constant="8" symbolic="YES" id="Kij-0W-HB6"/>
-                            <constraint firstItem="pdt-Sd-XGo" firstAttribute="top" secondItem="z2h-eV-Ldr" secondAttribute="bottom" constant="49" id="QYg-Ub-RRI"/>
-                            <constraint firstItem="qt1-Cc-EeI" firstAttribute="top" secondItem="1nB-c2-RlX" secondAttribute="bottom" id="c8v-Y9-5Fv"/>
-                            <constraint firstItem="qt1-Cc-EeI" firstAttribute="centerX" secondItem="TVR-x6-IqT" secondAttribute="centerX" id="jEH-Mg-UTz"/>
+                            <constraint firstItem="TVR-x6-IqT" firstAttribute="top" secondItem="qt1-Cc-EeI" secondAttribute="bottom" constant="8" symbolic="YES" id="ELE-ae-n1m"/>
+                            <constraint firstItem="qt1-Cc-EeI" firstAttribute="centerX" secondItem="TVR-x6-IqT" secondAttribute="centerX" id="FzB-Hv-aep"/>
+                            <constraint firstItem="TVR-x6-IqT" firstAttribute="centerX" secondItem="z2h-eV-Ldr" secondAttribute="centerX" id="N5T-rG-C4L"/>
+                            <constraint firstItem="qt1-Cc-EeI" firstAttribute="top" secondItem="1nB-c2-RlX" secondAttribute="bottom" id="Tbx-UV-014"/>
+                            <constraint firstItem="z2h-eV-Ldr" firstAttribute="top" secondItem="TVR-x6-IqT" secondAttribute="bottom" constant="8" symbolic="YES" id="Tzp-NC-Dzi"/>
+                            <constraint firstAttribute="trailing" secondItem="z2h-eV-Ldr" secondAttribute="trailing" id="ZAQ-v4-QQg"/>
+                            <constraint firstItem="z2h-eV-Ldr" firstAttribute="leading" secondItem="9cK-ZN-7Ec" secondAttribute="leading" id="cmU-Ir-a4W"/>
+                            <constraint firstItem="z2h-eV-Ldr" firstAttribute="bottom" secondItem="pdt-Sd-XGo" secondAttribute="top" id="gk8-Lt-gHg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Wineries" image="wine65.png" id="zCE-ja-FVH"/>
@@ -627,6 +627,6 @@ For more information on the early history of the Santa Clara Valley see the book
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ucA-Rb-sbW"/>
-        <segue reference="n00-Gl-ooi"/>
+        <segue reference="z70-Dq-5Pj"/>
     </inferredMetricsTieBreakers>
 </document>
