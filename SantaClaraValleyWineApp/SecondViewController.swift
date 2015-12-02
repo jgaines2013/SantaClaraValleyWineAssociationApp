@@ -18,6 +18,10 @@ class SecondViewController: UIViewController, UITextViewDelegate {
     }
     @IBOutlet var textView: UITextView!
 
+    @IBAction func facebookPage(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.facebook.com/santaclaravalleywines")!)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
